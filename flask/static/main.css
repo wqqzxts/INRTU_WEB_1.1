@@ -1,0 +1,135 @@
+@font-face{
+    font-family: "animeAce";
+    src: url(/static/fonts/animeAce.ttf);
+}
+@font-face {
+    font-family: "fontRegular";
+    src: url(/static/fonts/fontRegular.ttf);
+}
+/*Обычный текст*/
+.regText{
+    font-size: 21px;
+    font-family: "fontRegular";
+    color: #290404;
+}
+/*Заголовочный текст*/
+.defText{
+    font-size: 16px;
+    color: #290404;
+    font-family: "animeAce";
+}
+/*Основной блок*/
+.mainBlock{
+    padding: 15px;
+    margin: 8px 80px;
+    border-radius: 40px;
+    background-color: #F6F7F8;
+}
+/*Фото*/
+.roundPic{
+    width: 300px; 
+    height: 300px; 
+    margin: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.characterPic{
+    height: 100%;
+    width: 100%;
+}
+.roundMinePic{
+    width: 250px; 
+    height: 350px; 
+    margin: 8px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+/*Блок внешность*/
+.appearance{
+    transition: all;
+}
+/*Блок характеристика*/
+.characteristic{
+    text-align: center;
+}
+/*Блок личность*/
+.personality{
+    transition: all;
+}
+/*Блок способности*/
+.abilities{
+    transition: all;
+}
+/*Логотип навигации*/
+.navbarLogo{
+    width: 120px; 
+    height: 50px;
+    /* justify-content: center; */
+}
+/*Текст навигации*/
+.navbarText{
+    transition: 0.3s;
+    color: #290404;
+    font-weight: bold;
+    font-family: "animeAce";
+    font-size: 20px;
+}
+.navbarText:hover{
+    color: #668CBF; 
+    font-size: 21px;
+}
+/*Активная вкладка*/
+.active{
+    background-color: #F1D9DB;
+    border-radius: 20px;
+}
+/*Фоновое изображение*/
+.backgroundPic{
+    background-color: #D4F0FA;
+}
+/*Гиф*/
+.roundGif{
+    width: 300px; 
+    height: 220px; 
+    margin: 14px 8px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.characterGif{
+    height: 100%;
+    width: 100%;
+}
+/*Устал*/
+.hLink{
+    color: #668CBF;
+    transition: all 0.4s;
+}
+.hLink:hover{
+    color: #290404;
+}
+/*Блоки мяу*/
+.navBarBlock{
+    display: flex;
+    flex-direction: column;
+}
+/*Заголовки глоссарий*/
+.glosHead{
+    color: #290404;
+    font-weight: bold;
+    font-family: "animeAce";
+    font-size: 24px;
+    justify-content: center;
+    transition: all 1s;
+}
+@keyframes lightUp {
+    from { color: #668CBF }
+    to { color: #290404 }
+}
+.glosHead:target{
+    animation: lightUp 7s;
+}
+.crBlock{
+    border: 0px; 
+    border-radius: 120px; 
+    overflow: hidden;
+}
